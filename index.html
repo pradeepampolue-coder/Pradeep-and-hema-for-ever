@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eternal Love Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Scripts for downloading project as ZIP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #fff5f5;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .font-handwritten {
+        font-family: 'Dancing Script', cursive;
+      }
+      .font-serif-elegant {
+        font-family: 'Playfair Display', serif;
+      }
+      @keyframes heartbeat {
+        0% { transform: scale(1); opacity: 0.8; }
+        15% { transform: scale(1.15); opacity: 1; }
+        30% { transform: scale(1); opacity: 0.8; }
+        45% { transform: scale(1.08); opacity: 0.9; }
+        70% { transform: scale(1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 0.8; }
+      }
+      .animate-heartbeat {
+        animation: heartbeat 1.5s ease-in-out infinite;
+      }
+      .sparkle {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        opacity: 0;
+        pointer-events: none;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+      }
+      .floating-element {
+        position: absolute;
+        bottom: -50px;
+        animation: float var(--duration) linear infinite;
+        opacity: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

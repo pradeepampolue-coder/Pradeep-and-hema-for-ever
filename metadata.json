@@ -1,0 +1,7 @@
+{
+  "name": "Eternal Love Proposal",
+  "description": "A magical, soft, and warm romantic proposal experience featuring floating hearts, rose petals, and elegant animations to create an unforgettable moment for your lover.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
